@@ -50,6 +50,7 @@
     <button onclick="makeNewDiv()">Add value</button>
     <button type="button" class="btn-primary" onclick="get()">get value</button>
     <button type="button" class="btn-danger" onclick="spin()">spin value</button>
+    <button type="button" class="btn btn-success" onclick="swap()">swap value</button>
    
 
 
@@ -85,6 +86,16 @@
 
     }
 }
+function swap(){
+            let cyclerItems = document.getElementsByClassName("cycler")
+            let num1=Math.floor(Math.random()*(cyclerItems.length))
+            let num2=Math.floor(Math.random()*(cyclerItems.length))
+            t1=cyclerItems[num1].innerHTML
+            t2 =cyclerItems[num2].innerHTML
+            cyclerItems[num1].innerHTML=t1
+            cyclerItems[num2].innerHTML=t2
+         }
+
         
 
 
